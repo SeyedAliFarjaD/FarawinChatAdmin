@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    "checkJs": true,
+    "noEmitOnError": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "resolveJsonModule": true,
+    //for errors
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitAny": false
+    // "esModuleInterop": false,
+    // "forceConsistentCasingInFileNames": true,
+    // "useDefineForClassFields": true,
+    // "removeComments": false
+  }
+}

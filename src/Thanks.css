@@ -1,0 +1,127 @@
+.backgroundVideo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: fixed;
+}
+
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  padding: 32px;
+  font-size: 24px;
+
+  text-align: justify;
+
+  justify-content: center;
+  align-items: start;
+  direction: ltr;
+}
+
+.section h4 {
+  background: #a0a0a099;
+  padding: 8px 16px;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+
+.MenuButton {
+  position: absolute;
+  margin: 16px;
+  padding: 8px 16px;
+  background: #00000066;
+  border-radius: 8px;
+  left: 0;
+  top: 0;
+  transition: 0.4s all;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.MenuButton:hover {
+  background: #88888866;
+  transform: scale(1.05);
+}
+
+.description {
+  font-size: 16px;
+  width: 256px;
+  margin-top: 32px;
+
+  background: #a0a0a066;
+  padding: 8px 16px;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+
+.poem {
+  font-size: 14px;
+  font-family: "Courier New", Courier, monospace;
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+  .section {
+    font-size: 48px;
+  }
+
+  .MenuButton {
+    display: none;
+  }
+  .poem {
+    display: block;
+
+    background: #a0a0a066;
+    padding: 8px 16px;
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    margin-top: 16px;
+  }
+  .description {
+    font-size: 16px;
+    width: 368px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .poem {
+    font-size: 18px;
+  }
+}
+
+.card {
+  position: relative;
+  width: 12rem;
+  height: 8rem;
+  text-align: center;
+  line-height: 8rem;
+  color: #ecf0f1;
+  border-radius: 0.8rem;
+  font-size: 1.2rem;
+
+  background: #a0a0a066;
+  padding: 8px 16px;
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.8rem;
+  transition: transform 0.5s ease-in-out;
+  backface-visibility: hidden;
+}
+.face-back {
+  transform: rotateY(180deg);
+}
+.card:hover .face-front {
+  transform: rotateY(-180deg);
+}
+.card:hover .face-back {
+  transform: rotateY(0deg);
+}
